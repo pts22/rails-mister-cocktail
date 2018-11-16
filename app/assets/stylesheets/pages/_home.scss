@@ -1,1 +1,87 @@
 // Specific CSS for your home-page
+
+
+body{
+  background-color:rgb(30,31,26);
+}
+
+h1 {
+  text-align:center;
+  font-size:50px;
+  font-weight:solid;
+  color: rgb(249,239,96);
+  font-family: 'Cambo', serif;
+  background-color: rgba(135,135,135,0.1);
+  border-radius:10px;
+  padding:20px;
+
+}
+
+.more{
+color:rgb(135,135,145);
+font-family: 'Cambo', serif;
+}
+
+.more:hover{
+color:white;
+text-decoration:none;
+}
+
+.delete{
+  color:rgb(135,135,145);
+  font-family: 'Cambo', serif;
+}
+
+.delete:hover{
+color:white;
+text-decoration:none;
+}
+
+
+.card {
+  height: 300px;
+  text-shadow: 0 1px 3px rgba(0,0,0,1);
+  background-size: cover !important;
+  background-position: center;
+  color:rgb(249,239,96);
+  position: relative;
+  margin:20px 5px;
+  border-radius: 5px;
+  font-family: 'Cambo', serif;
+}
+
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin:0px, 15px;
+}
+
+.card-description h2 {
+  font-size: 15px;
+}
+.card-description p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: lighter;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover {
+  opacity: 0.1;
+}

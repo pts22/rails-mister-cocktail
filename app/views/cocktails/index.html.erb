@@ -1,0 +1,32 @@
+
+
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 50%), url('https://images.pexels.com/photos/699622/wine-glasses-drink-alcohol-699622.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+  <div class="banner-content">
+    <div id="title"> <h1>RAISE THE SPIRITS</h1> </div>
+  </div>
+  </div>
+
+
+<div class="container">
+    <div class="row">
+      <% @cocktails.each do |cocktail| %>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2));">
+            <div class="card-category"><%= cocktail.name %></div>
+            <div class="card-description">
+             <a class='more' <%= link_to 'more info', cocktail_path(cocktail)%></a>
+              <a class='delete'<%= link_to "delete", cocktail_path(cocktail),
+                method: :delete,
+                data: { confirm: "Are you sure?" } %></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      <%end%>
+    </div>
+  </div>
+
+
+
+
+
