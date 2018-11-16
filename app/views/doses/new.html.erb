@@ -1,10 +1,15 @@
 
-<%= simple_form_for [@cocktail, @dose] do |f| -%>
 
-<%= f.input :description %>
-<%= f.association :ingredient %>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 50%), url('https://images.pexels.com/photos/1185434/pexels-photo-1185434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+  <div class="banner-content">
+    <%= simple_form_for [@cocktail, @dose] do |f| -%>
 
-<%= f.submit "add a cocktail", class: "btn btn-primary" %>
+    <%= f.input :description %>
+    <%= f.association :ingredient %>
 
-<% end -%>
+    <%= f.submit "add ingredient", class: "btn btn-primary" %>
 
+    <% end -%>
+
+  </div>
+</div>
